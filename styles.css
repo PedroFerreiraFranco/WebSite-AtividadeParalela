@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    background-color: #ffffff; /* Fundo padrão da página em branco */
+    color: #000; /* Texto preto */
+}
+
+/* Seção hero */
+.hero {
+    background-color: #f8f9fa; /* Cor de fundo da seção hero em cinza claro */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Cor de fundo do footer em preto */
+}
+
+/* Custom button */
+.btn-dark {
+    background-color: #343a40; /* Cor do botão escuro */
+    border: none; /* Remove borda do botão */
+}
+
+.btn-dark:hover {
+    background-color: #212529; /* Cor do botão ao passar o mouse */
+}
+
+  /* Ajustando a cor dos indicadores */
+  .carousel-indicators li {
+    background-color: black; /* Cor dos pontinhos */
+}
+.carousel-indicators li.active {
+    background-color: gray; /* Cor do pontinho ativo */
+}
+
+/* Adicionando padding inferior ao conteúdo do carrossel */
+.carousel-inner > .carousel-item {
+    padding-bottom: 50px; /* Ajuste este valor conforme necessário */
+}

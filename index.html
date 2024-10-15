@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftX Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-3" data-aos="fade-down">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#home" class="navbar-brand">
+                <img src="img/logo.png" alt="Logo" style="width: 100px;"> <!-- Ajuste o tamanho da logo aqui -->
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero text-center py-5" style="background-color: #f8f9fa;" data-aos="fade-up">
+            <h2>Transforme suas ideias em realidade!</h2>
+            <p>Oferecemos soluções personalizadas em desenvolvimento web e mobile.</p>
+            <button class="btn btn-dark" onclick="scrollToContact()">Solicite um Orçamento</button>
+        </section>
+
+        <section id="sobre" class="py-5" style="background-color: #e9ecef;" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Sobre Nós</h2>
+                
+                <div id="sobreCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>Definição da Empresa</h3>
+                            <p>
+                                <strong>Nome:</strong> SoftX Solutions<br>
+                                <strong>Ramo/Nicho de Mercado:</strong> Desenvolvimento de Software sob demanda, incluindo soluções web e mobile personalizadas.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Missão</h3>
+                            <p>
+                                Criar soluções inovadoras que atendam às necessidades dos nossos clientes e superem suas expectativas.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Visão</h3>
+                            <p>
+                                Ser a referência em desenvolvimento de software personalizado, reconhecida pela qualidade e inovação de nossos projetos.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Soluções Oferecidas</h3>
+                            <ul>
+                                <li>Desenvolvimento de Aplicativos Web e Mobile</li>
+                                <li>Consultoria em Transformação Digital</li>
+                                <li>Integração de Sistemas e Automação de Processos</li>
+                                <li>Desenvolvimento de APIs e Sistemas de Gerenciamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Indicadores de ponto -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#sobreCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#sobreCarousel" data-slide-to="1"></li>
+                        <li data-target="#sobreCarousel" data-slide-to="2"></li>
+                        <li data-target="#sobreCarousel" data-slide-to="3"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5" style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center">Contato</h2>
+                <p class="text-center">Entre em contato conosco preenchendo o formulário abaixo:</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 SoftX Solutions. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa AOS
+
+        function scrollToContact() {
+            document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
